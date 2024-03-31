@@ -26,17 +26,15 @@ public class MainTask {
         $x("//html/body/header/div/nav/a[1]").click(); // 2. Click on the “Who we are” tab.
         $x("/html/body/main/section[4]").should(Condition.exist, Condition.visible); // 3. Verified if the “Global presence” is shown on the page.
         Selenide.closeWebDriver(); //4. closing the browser
-
-
     }
 
+
     //////----------------------Bonus Task------------------ ////////
+
     @Test
     public void LocatingWebElementWhoWeAreUsingCoordinates() { // 1. Use coordinates to click on the tab at main task step2
         Selenide.open("https://www.playtech.ee");
         Selenide.actions().moveByOffset(100, 200).click().perform();
-
-
     }
 
     @Test
@@ -44,8 +42,6 @@ public class MainTask {
         // Open the website
         Selenide.open("https://www.playtech.ee");
         $x("/html/body/header/div/div/div/div[1]").click();
-
-
     }
  @Test
  public void ExportGlobalPresenceTextToFile(){  //  3. Export main task step 3’s result as .txt file.
