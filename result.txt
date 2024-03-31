@@ -1,0 +1,1 @@
+Global presence is displayed: false
